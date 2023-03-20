@@ -1,39 +1,39 @@
-//  array of tweets
+// Initialize an array of tweets
 let tweets = [
     {
-      tweet: "Just had a delicious breakfast!",
-      username: "johndoe",
-      created_at: "03-19-2023",
-      age: 35
+      tweet: "God is great!",
+      username: "big man",
+      created_at: "05-11-2020",
+      age: 25
     },
     {
-      tweet: "I love going for walks in the park.",
-      username: "janedoe",
-      created_at: "03-18-2023",
-      age: 16
+      tweet: "ball is life.",
+      username: "Allen iverson",
+      created_at: "02-05-2001",
+      age: 25
     },
     {
-      tweet: "Excited for the new Avengers movie!",
-      username: "tonystark",
-      created_at: "03-17-2023",
-      age: 45
+      tweet: "will die another day!",
+      username: "James Bomd",
+      created_at: "05-11-2010",
+      age: 18
     },
     {
-      tweet: "Can't wait for the weekend!",
-      username: "sarahjones",
-      created_at: "03-16-2023",
+      tweet: "you miss every shot you don't take!",
+      username: "Michael Jordan",
+      created_at: "07-12-1997",
       age: 22
     },
     {
-      tweet: "I just finished reading a great book.",
-      username: "jacksmith",
-      created_at: "03-15-2023",
+      tweet: "yes we can.",
+      username: "Barrack obama",
+      created_at: "02-15-2008",
       age: 14
     },
     {
-      tweet: "Having a productive day at work!",
-      username: "emilybrown",
-      created_at: "03-14-2023",
+      tweet: "The earth is flat!",
+      username: "Kyrie Irving",
+      created_at: "06-04-2019",
       age: 29
     },
     {
@@ -43,40 +43,41 @@ let tweets = [
       age: 19
     },
     {
-      tweet: "Looking forward to my vacation next month!",
-      username: "amandaroberts",
-      created_at: "03-12-2023",
+      tweet: "I love basketball!",
+      username: "D.rose",
+      created_at: "05-13-2011",
+      age: 22
+    },
+    {
+      tweet: "Hockey is fun!",
+      username: "McDavid",
+      created_at: "06-14-2020",
+      age: 26
+    },
+    {
+      tweet: "never go agaisnt the family.",
+      username: "Vin diesel",
+      created_at: "09-06-2018",
       age: 17
-    },
-    {
-      tweet: "Just tried a new restaurant and it was amazing!",
-      username: "johnsmith",
-      created_at: "03-11-2023",
-      age: 33
-    },
-    {
-      tweet: "I love spending time with my family.",
-      username: "ashleynguyen",
-      created_at: "03-10-2023",
-      age: 12
     }
   ];
   
-  // tweets for users of 18 and over
+  // Print tweets for users above 18 using a while loop
   let counter = 0;
   while (counter < tweets.length) {
     let tweet = tweets[counter];
     if (tweet.age >= 18) {
       console.log(tweet.tweet + " - " + tweet.username + " - " + tweet.created_at);
     }
-    counter++;
+    counter=counter+1;
   }
   
-  // tweets for users under 18 
-  for (let counter = 0; counter < tweets.length; counter++) {
+  // Print tweets for users under 18 using a for loop
+  for (let counter = 0; counter < tweets.length;) {
     let tweet = tweets[counter];
     if (tweet.age < 18) {
       console.log(tweet.tweet + " - " + tweet.username + " - " + tweet.created_at);
     }
+    counter= counter +1;
   }
   
