@@ -1,4 +1,4 @@
-// Initialize an array of tweets
+// craeted an array of tweets
 let tweets = [
     {
       tweet: "God is great!",
@@ -62,22 +62,20 @@ let tweets = [
     }
   ];
   
-  // Print tweets for users above 18 using a while loop
+  // Print tweets for users over 18 using a while loop
   let counter = 0;
   while (counter < tweets.length) {
-    let tweet = tweets[counter];
-    if (tweet.age >= 18) {
-      console.log(tweet.tweet + " - " + tweet.username + " - " + tweet.created_at);
+    if (tweets.age >= 18) {
+console.log(`tweet: ${tweets[counter][`tweet`]}; username: ${tweets[counter][`username`]} created_at: ${tweets[counter][`created_at`]} `);
     }
     counter=counter+1;
   }
   
   // Print tweets for users under 18 using a for loop
-  for (let counter = 0; counter < tweets.length;) {
-    let tweet = tweets[counter];
-    if (tweet.age < 18) {
-      console.log(tweet.tweet + " - " + tweet.username + " - " + tweet.created_at);
+  for (let counter = 0; counter < tweets.length; counter= counter +1) {
+    if (tweets.age < 18) {
+        console.log(`tweet: ${tweets[counter][`tweet`]}; username: ${tweets[counter][`username`]} created_at: ${tweets[counter][`created_at`]} `);
     }
-    counter= counter +1;
+    
   }
   
